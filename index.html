@@ -1,0 +1,56 @@
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <!-- style code -->
+       <style>
+           .option:checked ~ label {
+       border: 2px solid rgb(255, 0, 0);
+     }
+     ul {
+     list-style-type: none;
+   }
+   
+       </style>
+   </head>
+   <body>
+       <h1 style="text-align: center; background-color: antiquewhite;"> Generate Get Well Soon Card</h1>
+   
+       <div class="img" style="margin-left: 40%;">
+           
+           <ul class="pic-list focus">  
+               <!-- one  -->
+               <li>
+                   <input type="radio" class="option" value="pic-one" id="pic1" name="pic">
+                    <label for="pic1">
+                   <img src="./images/gws.jpg " title="pic1" width="10%" height="10%" >
+               </label>
+           </li>
+                 <!-- two -->
+               <li>
+                   <input type="radio" class="option" value="pic-two" id="pic2" name="pic">
+                    <label for="pic2">
+                       <img src="./images/gws2.jpg" title="pic2" width="10%" height="10%">
+                   </label>
+               </li>
+               <!-- three -->
+               <li>
+                   <input type="radio" class="option" value="pic-three" id="pic3" name="pic"> 
+                   <label for="pic3">
+                   <img src="./images/gws3.jpg" title="pic3" width="10%" height="10%">
+                   </label>
+               </li>
+             
+           </ul>
+       </div>
+           <h2 style="margin-left: 40%;"> personal Message</h2>
+           <input type="text" style="width: 900px;height: 100px; margin-left: 10%;"><br>
+           <input type="button" value="Generate" style="margin-left: 43%; margin-top: 6px;" onclick="openAd()"> 
+
+      <script src="index.js"></script>
+       </body>
+   </html>
